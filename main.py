@@ -12,7 +12,7 @@ app = FastAPI()
 async def websocket_endpoint(websocket: WebSocket):
     await websocket.accept()
     while True:
-        await asyncio.sleep(2.5)
+        await asyncio.sleep(3.5)
         
         #puntos de interes de limache
         latitud = round(random.uniform(-33.032, -32.98), 6)
